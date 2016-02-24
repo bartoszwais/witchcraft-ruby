@@ -17,7 +17,7 @@ class String
     def next_mix(mix_times=1)
         result = self
         mix_times.times {
-             result = result.split(//).map {
+             result = result.chars.map {
                 |x| x.next
             }.join
         }
